@@ -52,6 +52,7 @@ public class Main {
             System.out.println(key + " " + score.get(key));
         }
         System.out.println("WINNER: " + winnerIndex + " Time: " + score.get(winnerIndex) + " !!!");
+        executorService.shutdown();
     }
 
     private static void sleepRandomTime() {
